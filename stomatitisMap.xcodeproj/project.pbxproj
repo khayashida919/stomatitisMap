@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4011707820DDE44000302C8E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011707720DDE44000302C8E /* HistoryViewController.swift */; };
+		4011707A20DDFD7100302C8E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011707920DDFD7100302C8E /* SettingViewController.swift */; };
+		4011707F20DE807700302C8E /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011707E20DE807700302C8E /* HistoryModel.swift */; };
+		4011708220EB997800302C8E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4011708120EB997800302C8E /* ChatViewController.swift */; };
+		4049BB6D2151D146009C6939 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049BB6C2151D146009C6939 /* Const.swift */; };
+		4049BB6F2151DF99009C6939 /* CLAuthorizationStatus+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049BB6E2151DF99009C6939 /* CLAuthorizationStatus+extension.swift */; };
+		405693D22129B5EA00EF4A11 /* CornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405693D12129B5EA00EF4A11 /* CornerButton.swift */; };
+		406F700720DD3AC20047D6DA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 406F700620DD3AC20047D6DA /* icon.png */; };
+		406F700920DD3BE30047D6DA /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 406F700820DD3BE30047D6DA /* icons */; };
+		408F235B210434D20044223E /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F235A210434D20044223E /* AppData.swift */; };
+		40932FEB20D93F3C00564022 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40932FEA20D93F3C00564022 /* MenuViewController.swift */; };
+		40990098214012E00070E2D0 /* TermServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40990097214012E00070E2D0 /* TermServiceViewController.swift */; };
+		40B9E8FA20AC6DAC000C12C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B9E8F920AC6DAC000C12C5 /* AppDelegate.swift */; };
+		40B9E8FC20AC6DAC000C12C5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B9E8FB20AC6DAC000C12C5 /* MapViewController.swift */; };
+		40B9E8FF20AC6DAC000C12C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B9E8FD20AC6DAC000C12C5 /* Main.storyboard */; };
+		40B9E90120AC6DAF000C12C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B9E90020AC6DAF000C12C5 /* Assets.xcassets */; };
+		40B9E90420AC6DAF000C12C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B9E90220AC6DAF000C12C5 /* LaunchScreen.storyboard */; };
+		40B9E90D20AC6F52000C12C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B9E90C20AC6F52000C12C5 /* MapKit.framework */; };
+		40B9E90F20AC7308000C12C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B9E90E20AC7308000C12C5 /* CoreLocation.framework */; };
+		40B9E91120ADAB6F000C12C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40B9E91020ADAB6F000C12C5 /* GoogleService-Info.plist */; };
+		40B9E91A20B15BEB000C12C5 /* ViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B9E91920B15BEB000C12C5 /* ViewController+extension.swift */; };
+		40B9E91C20B1618B000C12C5 /* IndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B9E91B20B1618B000C12C5 /* IndicatorViewController.swift */; };
+		40BAD7112140133F004BF66C /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAD7102140133F004BF66C /* PrivacyPolicyViewController.swift */; };
+		40E2D52A215739EC00EEC432 /* UIScrollView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2D529215739EC00EEC432 /* UIScrollView+extension.swift */; };
+		40FBFC4E21510048007FB3FC /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FBFC4D21510048007FB3FC /* LevelViewController.swift */; };
+		E83969A6E681960CCAC3987A /* Pods_stomatitisMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693532A8FDDD9CF807A30565 /* Pods_stomatitisMap.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4011707720DDE44000302C8E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4011707920DDFD7100302C8E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4011707E20DE807700302C8E /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		4011708120EB997800302C8E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		4049BB6C2151D146009C6939 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4049BB6E2151DF99009C6939 /* CLAuthorizationStatus+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLAuthorizationStatus+extension.swift"; sourceTree = "<group>"; };
+		405693D12129B5EA00EF4A11 /* CornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerButton.swift; sourceTree = "<group>"; };
+		406F700620DD3AC20047D6DA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		406F700820DD3BE30047D6DA /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		408F235A210434D20044223E /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		40932FEA20D93F3C00564022 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		40990097214012E00070E2D0 /* TermServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermServiceViewController.swift; sourceTree = "<group>"; };
+		40B9E8F620AC6DAC000C12C5 /* stomatitisMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stomatitisMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B9E8F920AC6DAC000C12C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40B9E8FB20AC6DAC000C12C5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		40B9E8FE20AC6DAC000C12C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40B9E90020AC6DAF000C12C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40B9E90320AC6DAF000C12C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40B9E90520AC6DAF000C12C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B9E90C20AC6F52000C12C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40B9E90E20AC7308000C12C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40B9E91020ADAB6F000C12C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		40B9E91920B15BEB000C12C5 /* ViewController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+extension.swift"; sourceTree = "<group>"; };
+		40B9E91B20B1618B000C12C5 /* IndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorViewController.swift; sourceTree = "<group>"; };
+		40BAD7102140133F004BF66C /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		40E2D529215739EC00EEC432 /* UIScrollView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+extension.swift"; sourceTree = "<group>"; };
+		40FBFC4D21510048007FB3FC /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		693532A8FDDD9CF807A30565 /* Pods_stomatitisMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stomatitisMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2AD4233E4DC15E1E823AA4 /* Pods-stomatitisMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stomatitisMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap.debug.xcconfig"; sourceTree = "<group>"; };
+		FBA72E2DD3543189F9C7CB47 /* Pods-stomatitisMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stomatitisMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40B9E8F320AC6DAC000C12C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B9E90F20AC7308000C12C5 /* CoreLocation.framework in Frameworks */,
+				40B9E90D20AC6F52000C12C5 /* MapKit.framework in Frameworks */,
+				E83969A6E681960CCAC3987A /* Pods_stomatitisMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39470A2BDBC55389E82B0435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE2AD4233E4DC15E1E823AA4 /* Pods-stomatitisMap.debug.xcconfig */,
+				FBA72E2DD3543189F9C7CB47 /* Pods-stomatitisMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4011707B20DE58C400302C8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40BAD71421401D5E004BF66C /* Common */,
+				4011707920DDFD7100302C8E /* SettingViewController.swift */,
+				40932FEA20D93F3C00564022 /* MenuViewController.swift */,
+				40B9E8FB20AC6DAC000C12C5 /* MapViewController.swift */,
+				4011707720DDE44000302C8E /* HistoryViewController.swift */,
+				4011708120EB997800302C8E /* ChatViewController.swift */,
+				40BAD7102140133F004BF66C /* PrivacyPolicyViewController.swift */,
+				40FBFC4D21510048007FB3FC /* LevelViewController.swift */,
+				40990097214012E00070E2D0 /* TermServiceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4011707C20DE58D400302C8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				405693D12129B5EA00EF4A11 /* CornerButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4011707D20DE58FE00302C8E /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				40B9E91920B15BEB000C12C5 /* ViewController+extension.swift */,
+				4049BB6E2151DF99009C6939 /* CLAuthorizationStatus+extension.swift */,
+				40E2D529215739EC00EEC432 /* UIScrollView+extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		4011708020DE808100302C8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4011707E20DE807700302C8E /* HistoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		408F2359210434C10044223E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				408F235A210434D20044223E /* AppData.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		40B9E8ED20AC6DAC000C12C5 = {
+			isa = PBXGroup;
+			children = (
+				40B9E8F820AC6DAC000C12C5 /* stomatitisMap */,
+				40B9E8F720AC6DAC000C12C5 /* Products */,
+				40B9E90B20AC6F52000C12C5 /* Frameworks */,
+				39470A2BDBC55389E82B0435 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		40B9E8F720AC6DAC000C12C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40B9E8F620AC6DAC000C12C5 /* stomatitisMap.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40B9E8F820AC6DAC000C12C5 /* stomatitisMap */ = {
+			isa = PBXGroup;
+			children = (
+				40B9E8F920AC6DAC000C12C5 /* AppDelegate.swift */,
+				408F2359210434C10044223E /* Common */,
+				4011707B20DE58C400302C8E /* Controller */,
+				4011707D20DE58FE00302C8E /* extension */,
+				4011707C20DE58D400302C8E /* View */,
+				4011708020DE808100302C8E /* Model */,
+				40B9E8FD20AC6DAC000C12C5 /* Main.storyboard */,
+				40B9E90020AC6DAF000C12C5 /* Assets.xcassets */,
+				40B9E90220AC6DAF000C12C5 /* LaunchScreen.storyboard */,
+				40B9E90520AC6DAF000C12C5 /* Info.plist */,
+				40B9E91020ADAB6F000C12C5 /* GoogleService-Info.plist */,
+				406F700620DD3AC20047D6DA /* icon.png */,
+				406F700820DD3BE30047D6DA /* icons */,
+			);
+			path = stomatitisMap;
+			sourceTree = "<group>";
+		};
+		40B9E90B20AC6F52000C12C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B9E90E20AC7308000C12C5 /* CoreLocation.framework */,
+				40B9E90C20AC6F52000C12C5 /* MapKit.framework */,
+				693532A8FDDD9CF807A30565 /* Pods_stomatitisMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40BAD71421401D5E004BF66C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				40B9E91B20B1618B000C12C5 /* IndicatorViewController.swift */,
+				4049BB6C2151D146009C6939 /* Const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40B9E8F520AC6DAC000C12C5 /* stomatitisMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40B9E90820AC6DAF000C12C5 /* Build configuration list for PBXNativeTarget "stomatitisMap" */;
+			buildPhases = (
+				1FC98DF24B59E3881B4A4E66 /* [CP] Check Pods Manifest.lock */,
+				403776A92152210D004EEE16 /* ShellScript */,
+				40B9E8F220AC6DAC000C12C5 /* Sources */,
+				40B9E8F320AC6DAC000C12C5 /* Frameworks */,
+				40B9E8F420AC6DAC000C12C5 /* Resources */,
+				A0A00759A7572C12DF89D015 /* [CP] Embed Pods Frameworks */,
+				FC0A2EC3E904FC220F348CF4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stomatitisMap;
+			productName = stomatitisMap;
+			productReference = 40B9E8F620AC6DAC000C12C5 /* stomatitisMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40B9E8EE20AC6DAC000C12C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = khayashida;
+				TargetAttributes = {
+					40B9E8F520AC6DAC000C12C5 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 40B9E8F120AC6DAC000C12C5 /* Build configuration list for PBXProject "stomatitisMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40B9E8ED20AC6DAC000C12C5;
+			productRefGroup = 40B9E8F720AC6DAC000C12C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40B9E8F520AC6DAC000C12C5 /* stomatitisMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40B9E8F420AC6DAC000C12C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B9E90420AC6DAF000C12C5 /* LaunchScreen.storyboard in Resources */,
+				40B9E91120ADAB6F000C12C5 /* GoogleService-Info.plist in Resources */,
+				406F700720DD3AC20047D6DA /* icon.png in Resources */,
+				406F700920DD3BE30047D6DA /* icons in Resources */,
+				40B9E90120AC6DAF000C12C5 /* Assets.xcassets in Resources */,
+				40B9E8FF20AC6DAC000C12C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC98DF24B59E3881B4A4E66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stomatitisMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		403776A92152210D004EEE16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"\n";
+		};
+		A0A00759A7572C12DF89D015 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0A2EC3E904FC220F348CF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stomatitisMap/Pods-stomatitisMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40B9E8F220AC6DAC000C12C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4011707F20DE807700302C8E /* HistoryModel.swift in Sources */,
+				40B9E91C20B1618B000C12C5 /* IndicatorViewController.swift in Sources */,
+				405693D22129B5EA00EF4A11 /* CornerButton.swift in Sources */,
+				40FBFC4E21510048007FB3FC /* LevelViewController.swift in Sources */,
+				40932FEB20D93F3C00564022 /* MenuViewController.swift in Sources */,
+				40BAD7112140133F004BF66C /* PrivacyPolicyViewController.swift in Sources */,
+				4011708220EB997800302C8E /* ChatViewController.swift in Sources */,
+				40B9E91A20B15BEB000C12C5 /* ViewController+extension.swift in Sources */,
+				40E2D52A215739EC00EEC432 /* UIScrollView+extension.swift in Sources */,
+				4011707820DDE44000302C8E /* HistoryViewController.swift in Sources */,
+				40B9E8FC20AC6DAC000C12C5 /* MapViewController.swift in Sources */,
+				4011707A20DDFD7100302C8E /* SettingViewController.swift in Sources */,
+				40B9E8FA20AC6DAC000C12C5 /* AppDelegate.swift in Sources */,
+				4049BB6F2151DF99009C6939 /* CLAuthorizationStatus+extension.swift in Sources */,
+				40990098214012E00070E2D0 /* TermServiceViewController.swift in Sources */,
+				408F235B210434D20044223E /* AppData.swift in Sources */,
+				4049BB6D2151D146009C6939 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		40B9E8FD20AC6DAC000C12C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40B9E8FE20AC6DAC000C12C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		40B9E90220AC6DAF000C12C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40B9E90320AC6DAF000C12C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40B9E90620AC6DAF000C12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Assets.xcassets;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40B9E90720AC6DAF000C12C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Assets.xcassets;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40B9E90920AC6DAF000C12C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2AD4233E4DC15E1E823AA4 /* Pods-stomatitisMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DU45P949ZD;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/stomatitisMap/Database",
+				);
+				INFOPLIST_FILE = stomatitisMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.khayashida.stomatitisMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "57b970ca-3389-43fb-84ef-ec63a708178e";
+				PROVISIONING_PROFILE_SPECIFIER = WildCard_dev;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		40B9E90A20AC6DAF000C12C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA72E2DD3543189F9C7CB47 /* Pods-stomatitisMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DU45P949ZD;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/stomatitisMap/Database",
+				);
+				INFOPLIST_FILE = stomatitisMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULEMAP_FILE = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.khayashida.stomatitisMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "54a40878-f2aa-4b06-ba4d-e45921f37d28";
+				PROVISIONING_PROFILE_SPECIFIER = stomatitisMap_store;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40B9E8F120AC6DAC000C12C5 /* Build configuration list for PBXProject "stomatitisMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B9E90620AC6DAF000C12C5 /* Debug */,
+				40B9E90720AC6DAF000C12C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40B9E90820AC6DAF000C12C5 /* Build configuration list for PBXNativeTarget "stomatitisMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B9E90920AC6DAF000C12C5 /* Debug */,
+				40B9E90A20AC6DAF000C12C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40B9E8EE20AC6DAC000C12C5 /* Project object */;
+}
