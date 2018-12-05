@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import MessageKit
+import MessageInputBar
 
 final class ChatViewController: MessagesViewController {
     
@@ -33,7 +34,7 @@ final class ChatViewController: MessagesViewController {
         messageInputBar.sendButton.tintColor = UIColor.lightGray
         
         // メッセージ入力時に一番下までスクロール
-        scrollsToBottomOnKeybordBeginsEditing = true // default false
+        scrollsToBottomOnKeyboardBeginsEditing = true // default false
         maintainPositionOnKeyboardFrameChanged = true // default false
 
         messagesCollectionView.keyboardDismissMode = .interactive
@@ -95,13 +96,13 @@ extension ChatViewController: MessagesDataSource {
     // メッセージの上に文字を表示（名前）
     func messageTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
         let name = message.sender.displayName
-        return NSAttributedString(string: name, attributes: [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: .caption1)])
+        return NSAttributedString(string: name, attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .caption1)])
     }
     
     // メッセージの下に文字を表示（日付）
     func messageBottomLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
         let dateString = AppData.shared.dateFormater.string(from: message.sentDate)
-        return NSAttributedString(string: dateString, attributes: [NSAttributedStringKey.font: UIFont.preferredFont(forTextStyle: .caption2)])
+        return NSAttributedString(string: dateString, attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .caption2)])
     }
 }
 
@@ -132,6 +133,10 @@ extension ChatViewController: MessagesLayoutDelegate {
 }
 
 extension ChatViewController: MessageCellDelegate {
+    func didTapCell(in cell: MessageCollectionViewCell) {
+        messageInputBar.inputTextView.resignFirstResponder()
+    }
+    
     func didTapAvatar(in cell: MessageCollectionViewCell) {
         guard let indexPath = messagesCollectionView.indexPath(for: cell) else { return }
         guard let messagesDataSource = messagesCollectionView.messagesDataSource else { return }
@@ -153,14 +158,10 @@ extension ChatViewController: MessageCellDelegate {
             })
         })
     }
-    
-    func didTapCell(in cell: MessageCollectionViewCell) {
-        messageInputBar.inputTextView.resignFirstResponder()
-    }
 }
 
 extension ChatViewController: MessageInputBarDelegate {
-    // メッセージ送信ボタンをタップした時の挙動
+//     メッセージ送信ボタンをタップした時の挙動
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         let timestamp = AppData.shared.dateFormater.string(from: Date())
         let chat = ["date": timestamp,

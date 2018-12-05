@@ -16,17 +16,10 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.color` struct is generated, and contains static references to 0 colors.
-  struct color {
-    fileprivate init() {}
-  }
-  
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 2 files.
   struct file {
     /// Resource file `GoogleService-Info.plist`.
     static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
-    /// Resource file `icon.png`.
-    static let iconPng = Rswift.FileResource(bundle: R.hostingBundle, name: "icon", pathExtension: "png")
     /// Resource file `icons`.
     static let icons = Rswift.FileResource(bundle: R.hostingBundle, name: "icons", pathExtension: "")
     
@@ -36,23 +29,12 @@ struct R: Rswift.Validatable {
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    /// `bundle.url(forResource: "icon", withExtension: "png")`
-    static func iconPng(_: Void = ()) -> Foundation.URL? {
-      let fileResource = R.file.iconPng
-      return fileResource.bundle.url(forResource: fileResource)
-    }
-    
     /// `bundle.url(forResource: "icons", withExtension: "")`
     static func icons(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.icons
       return fileResource.bundle.url(forResource: fileResource)
     }
     
-    fileprivate init() {}
-  }
-  
-  /// This `R.font` struct is generated, and contains static references to 0 fonts.
-  struct font {
     fileprivate init() {}
   }
   
@@ -146,11 +128,6 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
-  struct nib {
-    fileprivate init() {}
-  }
-  
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `MenuCell`.
@@ -228,11 +205,6 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 0 localization tables.
-  struct string {
-    fileprivate init() {}
-  }
-  
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -251,20 +223,22 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
-  struct nib {
-    fileprivate init() {}
-  }
-  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
+      try launchScreen.validate()
       try main.validate()
     }
     
-    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType {
+    struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
       typealias InitialController = UIKit.UIViewController
       
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
       
       fileprivate init() {}
     }
@@ -286,11 +260,13 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
-        if UIKit.UIImage(named: "inIconRound") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'inIconRound' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "menu") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "History") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'History' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "icontwitter100") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'icontwitter100' is used in storyboard 'Main', but couldn't be loaded.") }
-        if UIKit.UIImage(named: "send") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'send' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "History", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'History' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "icontwitter100", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'icontwitter100' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "inIconRound", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'inIconRound' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "menu", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'menu' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "send", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'send' is used in storyboard 'Main', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
         if _R.storyboard.main().menuViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'menuViewController' could not be loaded from storyboard 'Main' as 'MenuViewController'.") }
         if _R.storyboard.main().indicatorViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'indicatorViewController' could not be loaded from storyboard 'Main' as 'IndicatorViewController'.") }
       }

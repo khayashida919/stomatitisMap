@@ -11,7 +11,11 @@ pod 'Firebase/Crash'
 pod 'Firebase/Database'
 pod 'Google-Mobile-Ads-SDK'
 pod 'TwitterKit'
-pod 'MessageKit'
-pod 'R.swift'
+pod 'MessageKit', '2.0.0-beta.1'
+
+# pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit.git', :branch => 'swift-4.2'
+
+
+pod 'R.swift', '5.0.0.alpha.3'
 
 end
